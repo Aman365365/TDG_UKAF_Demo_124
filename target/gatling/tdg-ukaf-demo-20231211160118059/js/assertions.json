@@ -1,0 +1,10 @@
+{
+  "simulation": "Runner.TDG_UKAF_demo",
+  "simulationId": "tdg-ukaf-demo",
+  "start": 1702310478059,
+  "description": "",
+  "scenarios": ["ServiceTest"],
+  "assertions": [
+
+  ]
+}

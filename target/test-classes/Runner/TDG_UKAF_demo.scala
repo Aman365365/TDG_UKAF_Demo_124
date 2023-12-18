@@ -5,7 +5,6 @@ import io.gatling.core.Predef.{constantUsersPerSec, _}
 
 import scala.concurrent.duration._
 import scala.language.postfixOps
-import com.intuit.karate.gatling.KarateActionBuilder
 import io.gatling.core.structure.ScenarioBuilder
 
 

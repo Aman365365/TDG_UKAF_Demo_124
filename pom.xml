@@ -16,7 +16,7 @@
 <maven.surefire.version>2.22.2</maven.surefire.version>
 <surefire.plugin.version>3.0.0-M5</surefire.plugin.version>
 <slf4j.version>1.7.7</slf4j.version>
-<karate.version>1.0.1</karate.version>
+<karate.version>1.2.0</karate.version>
 <junit5.version>5.9.1</junit5.version>
 <assertj.version>3.6.2</assertj.version>
 <scala-maven-plugin.version>4.8.1</scala-maven-plugin.version>
@@ -40,7 +40,7 @@
 <dependency>
     <groupId>com.intuit.karate</groupId>
     <artifactId>karate-core</artifactId>
-    <version>1.0.1</version>
+    <version>1.2.0</version>
 </dependency>
 <dependency>
     <groupId>com.intuit.karate</groupId>
@@ -139,39 +139,39 @@
     <version>2.13.9</version>
 </dependency>
 </dependencies>
-<build>
-<testResources>
-    <testResource>
-        <directory>src/test/java</directory>
-        <excludes>
-            <exclude>**/*.java</exclude>
-        </excludes>
-    </testResource>
-</testResources>
+    <build>
+        <testResources>
+            <testResource>
+                <directory>src/test/java</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </testResource>
+        </testResources>
 
-<plugins>
-    <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.0</version>
-        <configuration>
-            <encoding>UTF-8</encoding>
-            <source>8</source>
-            <target>8</target>
-            <compilerArgument>-Werror</compilerArgument>
-        </configuration>
-    </plugin>
-    <plugin>
-        <groupId>io.gatling</groupId>
-        <artifactId>gatling-maven-plugin</artifactId>
-        <version>3.1.1</version>
-        <configuration>
-            <simulationsFolder>src/test/java</simulationsFolder>
-            <includes>
-                <include>Runner.TDG_UKAF_demo</include>
-            </includes>
-        </configuration>
-    </plugin>
-</plugins>
-</build>
-        </project>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <source>8</source>
+                    <target>8</target>
+                    <compilerArgument>-Werror</compilerArgument>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>io.gatling</groupId>
+                <artifactId>gatling-maven-plugin</artifactId>
+                <version>3.1.1</version>
+                <configuration>
+                    <simulationsFolder>src/test/java</simulationsFolder>
+                    <includes>
+                        <include>Runner.TDG_UKAF_Externalize</include>
+                    </includes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
